@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html,body{
+            height :100vh;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .main-cont{
+            height:100%;
+            width: 60%;
+            background-color: #56ccf2;
+            text-align: center;
+            
+        }
+        .child-1{
+            height:20%;
+            width: 100%;
+            font-size: 30px;
+            /* background-color: palevioletred; */
+            padding-top: 5%;
+        }
+        .child-2{
+            height:80%;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            
+        }
+        .c1{
+            height: 100%;
+            width: 50%;
+            /* background-color: aqua; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        .childc1{
+              height: 40px;
+              width: 100px;
+              background-color: black;
+              color: #ffff;
+              margin-bottom: 10%;
+              margin-right: 6%;
+              border-radius: 5px;
+        }
+        .childc2{
+              height: 40px;
+              width: 100px;
+              background-color: black;
+              color: #ffff;
+              margin-bottom: 10%;
+              margin-right: 6%;
+              border-radius: 5px;
+              
+        }
+        .childc3{
+              height: 40px;
+              width: 100px;
+              background-color: black;
+              color: #ffff;
+              margin-right: 6%;
+              border-radius: 5px;
+        }
+        .child-3{
+            height: 100%;
+            width: 50%;
+            /* background-color: greenyellow; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: self-start;
+            
+        }
+        .child-3-1{
+            height:60%;
+            width :28%;
+            background-color: black;
+            margin-left: 5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 40px;
+            
+        }
+        .c3-1{
+            height: 80px;
+            width: 80px;
+            background-color: rgb(90, 105, 109);
+            margin-bottom: 5%;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        .c3-2{
+            height: 80px;
+            width: 80px;
+            background-color: rgb(90, 105, 109);
+            margin-bottom: 5%;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+        .c3-3{
+            height: 80px;
+            width: 80px;
+            background-color: rgb(90, 105, 109);
+            margin-bottom: 5%;
+            border-radius: 50%;
+            
+        }
+
+
+        
+
+    </style>
+</head>
+<body>
+    <div class="main-cont">
+        <div class = "child-1">
+            <h1>Traffic Light</h1>
+        </div>
+        <div class="child-2">
+             <div class="c1">
+                <button id="buttonRed" onclick="trafficRed()" class="childc1"><h3>Stop</h3></button>
+                <button id="buttonYellow" onclick="trafficYellow()" class="childc2"><h3>Ready</h3></button>
+                <button id="buttonGreen" onclick="trafficGreen()" class="childc3"><h3>Go</h3></button>
+             </div>
+             <div class="child-3" >
+                <div class="child-3-1">
+                    <div id="redLight" class="c3-1"></div>
+                    <div id="yellowLight" class="c3-1"></div>
+                    <div id="greenLight" class="c3-1"></div>
+                </div>
+             </div>
+        </div>
+        
+    <script src="DOM(Traffic-light).js"></script>
+    </div>
+
+</body>
+</html>
